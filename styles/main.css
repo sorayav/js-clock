@@ -88,4 +88,8 @@ a {
     height: 230px;
     padding: 2rem;
   }
+
+  details {
+    margin-top: 10px;
+  }
 }
