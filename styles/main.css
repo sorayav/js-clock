@@ -63,11 +63,15 @@ body {
 
 details {
   position: absolute;
-  bottom: 10px;
+  bottom: 8px;
   color: var(--handColor);
   font-family: Arial, Helvetica, sans-serif;
-  text-align: center;
   font-size: 0.8rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 summary {
