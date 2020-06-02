@@ -1,4 +1,4 @@
-# JavaScript clock.
+# Neumorphic JavaScript clock.
 
 Responsive clock built with JavaScript vanilla as part of #JavaScript30 challenges.
 
