@@ -1,6 +1,6 @@
 :root {
   --bgColor: #091921;
-  --handColor: rgb(170, 49, 49);
+  --handColor: rgb(197, 16, 16);
 }
 
 body {
@@ -14,8 +14,11 @@ body {
 }
 
 .clock {
-  width: 350px;
-  height: 350px;
+  background: url('../images/clock.png') no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 30rem;
+  height: 30rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,7 +29,7 @@ body {
               inset 0 15px 15px rgba(0, 0, 0, 0.3);
   border-radius: 50%;
   position: relative;
-  padding: 2rem;
+  padding: 3rem;
 }
 
 .clock:before {
@@ -49,11 +52,36 @@ body {
 .hand {
   width: 50%;
   height: 2px;
-  background: red;
+  background: var(--handColor);
   position: absolute;
   top: 50%;
   transform-origin: 100%;
   transform: rotate(90deg);
   transition: all 0.05s;
   transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+details {
+  position: absolute;
+  bottom: 10px;
+  color: var(--handColor);
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+summary {
+  outline: none;
+}
+
+a {
+  color: #1a4961;
+}
+
+@media (max-width: 500px) {
+  .clock {
+    width: 230px;
+    height: 230px;
+    padding: 2rem;
+  }
 }
